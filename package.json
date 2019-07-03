@@ -11,7 +11,9 @@
     "delivery-tracker": "./bin/index.js"
   },
   "scripts": {
-    "test": "standard && grunt"
+    "test": "standard && grunt",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -58,6 +60,8 @@
     "commander": "^2.9.0",
     "moment": "^2.17.1",
     "request": "^2.79.0",
-    "xml2js": "^0.4.17"
-  }
+    "xml2js": "^0.4.17",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
